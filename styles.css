@@ -133,9 +133,14 @@ p {
   font-weight: 500;
   color: var(--text-secondary);
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
+  color: var(--text-primary);
+}
+
+.nav-links a.active {
   color: var(--text-primary);
 }
 
@@ -769,7 +774,31 @@ html[lang="en"] [data-lang="zh"] {
 }
 
 @media (max-width: 600px) {
+  .nav-content {
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    align-items: center;
+  }
+
+  .brand-title {
+    display: none;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
   .nav-links {
+    display: flex;
+    order: 3;
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
     display: none;
   }
 
