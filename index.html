@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="zh">方扬 | 图数据库产品与架构实践</title>
+  <title data-lang="en">Fang Yang | Graph Database Product & Architecture</title>
+  <meta name="description" content="方扬个人主页，聚焦图数据库产品规划、分布式架构理解、金融级图应用落地与行业实践。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="#top" class="brand">
+        <img src="profile.jpg" alt="方扬" class="brand-avatar">
+        <div class="brand-info">
+          <span class="brand-name" data-lang="zh">方扬</span>
+          <span class="brand-name" data-lang="en">Fang Yang</span>
+          <span class="brand-title" data-lang="zh">图数据库产品与架构</span>
+          <span class="brand-title" data-lang="en">Graph Database Product &amp; Architecture</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#positioning"><span data-lang="zh">定位</span><span data-lang="en">Positioning</span></a>
+        <a href="#products"><span data-lang="zh">代表工作</span><span data-lang="en">Experience</span></a>
+        <a href="#impact"><span data-lang="zh">关注点</span><span data-lang="en">Focus</span></a>
+        <a href="#timeline"><span data-lang="zh">经历</span><span data-lang="en">Timeline</span></a>
+      </div>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-btn">EN/中</button>
+        <a href="#contact" class="nav-contact"><span data-lang="zh">建立联系</span><span data-lang="en">Contact</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero glass-panel">
+      <div class="hero-container">
+        <div class="hero-text-content">
+          <div class="hero-tags">
+            <span class="tag"><span data-lang="zh">技术型产品负责人</span><span data-lang="en">Technical Product
+                Leader</span></span>
+            <span class="tag"><span data-lang="zh">行业场景顾问</span><span data-lang="en">Industry Consultant</span></span>
+          </div>
+          <h1 data-lang="zh">长期从事<strong class="highlight">图数据库产品规划</strong>、<strong
+              class="highlight">架构沟通</strong>与<strong class="highlight">行业场景落地</strong>相关工作</h1>
+          <h1 data-lang="en">Long-term focus on <strong class="highlight">graph database product planning</strong>,
+            <strong class="highlight">architecture communication</strong>, and <strong class="highlight">industry
+              scenario implementation</strong>
+          </h1>
+          <p class="hero-desc" data-lang="zh">
+            方扬，20 年技术与产品经验，长期在图数据库和云服务方向持续工作。先后参与 NebulaGraph、悦数图数据库、TuGraph、GeaBase、GeaFlow、华为云 GES
+            等核心产品演进，更侧重以产品方法连接底层技术与真实客户场景及落地路径。
+          </p>
+          <p class="hero-desc" data-lang="en">
+            Fang Yang, 20 years of experience in technology and products, with a long-term focus on graph databases and
+            cloud services. Participated in the evolution of core products such as NebulaGraph, TuGraph, GeaBase,
+            GeaFlow, and Huawei Cloud GES, focusing on connecting underlying technology with real customer scenarios and
+            implementation paths through product methodology.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary"><span data-lang="zh">建立联系</span><span data-lang="en">Let's
+                Connect</span></a>
+            <a href="#products" class="btn btn-secondary"><span data-lang="zh">查看工作内容</span><span data-lang="en">View
+                Experience</span></a>
+          </div>
+        </div>
+        <div class="hero-image-content">
+          <img src="profile.jpg" alt="方扬的照片" class="hero-main-avatar">
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">20<span><span data-lang="zh">年</span><span data-lang="en">Years</span></span></div>
+          <div class="stat-label"><span data-lang="zh">技术与产品经验</span><span data-lang="en">Tech &amp; Product
+              Experience</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3<span><span data-lang="zh">款</span><span data-lang="en">Products</span></span></div>
+          <div class="stat-label"><span data-lang="zh">业界知名图产品实践</span><span data-lang="en">Renowned Graph Products
+              Practice</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">30<span>+</span></div>
+          <div class="stat-label"><span data-lang="zh">人以上团队管理</span><span data-lang="en">Team Management</span></div>
+        </div>
+        <div class="stat-card" data-lang="zh">
+          <div class="stat-num">万亿<span>级</span></div>
+          <div class="stat-label">图方案设计实践</div>
+        </div>
+        <div class="stat-card" data-lang="en">
+          <div class="stat-num">Trillion<span>-level</span></div>
+          <div class="stat-label">Graph Solution Design Practice</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Positioning -->
+    <section id="positioning" class="section">
+      <div class="section-header">
+        <span class="section-subtitle"><span data-lang="zh">定位 Core Positioning</span><span data-lang="en">Core
+            Positioning</span></span>
+        <h2 data-lang="zh">聚焦<strong class="highlight">核心技术产品化</strong>与<strong class="highlight">复杂行业场景落地</strong>
+        </h2>
+        <h2 data-lang="en">Focus on <strong class="highlight">productizing core technology</strong> and <strong
+          class="highlight">landing complex industry scenarios</strong></h2>
+        <p data-lang="zh">在产品负责人与行业顾问的视角间切换，持续连接底层架构与真实业务侧价值。</p>
+        <p data-lang="en">Switching between the perspectives of product leader and industry consultant to continuously
+          connect underlying architecture with real business value.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">产品深度</span><span data-lang="en">Product Depth</span></h3>
+          <p data-lang="zh">覆盖开源、自研、云服务、一体机与商业版图数据库形态，持续积累路线图与产品组合经验。</p>
+          <p data-lang="en">Covering open-source, self-developed, cloud service, all-in-one, and commercial graph
+            database forms, continuously accumulating roadmap and product portfolio experience.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">技术沟通</span><span data-lang="en">Tech Communication</span></h3>
+          <p data-lang="zh">熟悉图数据库核心架构、分布式技术与性能瓶颈治理，能够将客户诉求进一步转化为可落地能力。</p>
+          <p data-lang="en">Familiar with graph database core architecture, distributed technology, and performance
+            bottleneck governance, translating customer demands into implementable capabilities.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">行业参与</span><span data-lang="en">Industry Involvement</span></h3>
+          <p data-lang="zh">参与国家级与行业级图数据库标准、白皮书制定，对图数据库行业发展保持持续关注。</p>
+          <p data-lang="en">Participate in the formulation of national and industry-level graph database standards and
+            white papers, keeping continuous track of industry development.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">项目落地</span><span data-lang="en">Project Delivery</span></h3>
+          <p data-lang="zh">长期参与金融、能源等头部客户 POC 与交付，在复杂业务环境中推进从方案到落地的闭环。</p>
+          <p data-lang="en">Long-term participation in POC and delivery for top customers in finance and energy,
+            advancing the closed loop from solution to implementation in complex environments.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section section-gray">
+      <div class="section-header">
+        <span class="section-subtitle"><span data-lang="zh">代表工作 Representative Work</span><span
+            data-lang="en">Representative Work</span></span>
+        <h2 data-lang="zh">从开源生态到金融核心的<strong class="highlight">图数据库实践</strong></h2>
+        <h2 data-lang="en">Graph database practice from <strong class="highlight">open source</strong> to
+          <strong class="highlight">financial core systems</strong>
+        </h2>
+        <p data-lang="zh">不仅是一份履历，也是我对架构演进与商业落地的持续思考。</p>
+        <p data-lang="en">Not just a resume, but also my continuous thinking on architecture evolution and commercial
+          implementation.</p>
+      </div>
+      <div class="timeline-cards">
+
+        <div class="card-horizontal">
+          <div class="card-logo-box">
+            <img src="yueshu_logo.png" data-lang="zh"
+              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><rect width=\'64\' height=\'64\' fill=\'%23f2f2f7\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'24\' font-weight=\'bold\' fill=\'%2386868b\' text-anchor=\'middle\' dy=\'.3em\'>V</text></svg>'"
+              alt="Vesoft" class="company-logo logo-vesoft" />
+            <img src="nebula_logo.png" data-lang="en"
+              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><rect width=\'64\' height=\'64\' fill=\'%23f2f2f7\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'24\' font-weight=\'bold\' fill=\'%2386868b\' text-anchor=\'middle\' dy=\'.3em\'>V</text></svg>'"
+              alt="Vesoft" class="company-logo logo-vesoft" />
+            <div class="card-meta">
+              <span class="company"><span data-lang="zh">悦数科技</span><span data-lang="en">Vesoft</span></span>
+              <span class="time"><span data-lang="zh">2022 - 至今</span><span data-lang="en">2022 - Present</span></span>
+            </div>
+          </div>
+          <div class="card-content-wrapper">
+            <div class="card-body">
+              <h3><span data-lang="zh">NebulaGraph / 悦数图数据库</span><span data-lang="en">NebulaGraph
+                  Database</span></h3>
+              <p data-lang="zh">负责产品路线图，兼顾开源生态与金融级商业需求，同时从架构视角参与头部客户方案设计。</p>
+              <p data-lang="en">Responsible for the product roadmap, balancing the open-source ecosystem and
+                financial-grade business needs, while participating in top customer solution design from an
+                architectural perspective.</p>
+              <ul class="feature-list" data-lang="zh">
+                <li>产品战略与商业版能力规划</li>
+                <li>银行、互联网、Web3、公安、电信、能源客户万亿级图方案设计</li>
+                <li>参与国家级图数据库标准制定</li>
+              </ul>
+              <ul class="feature-list" data-lang="en">
+                <li>Product strategy and commercial edition capability planning</li>
+                <li>Trillion-level graph solution design for banking, internet, Web3, public security, telecom, and
+                  energy customers</li>
+                <li>Participation in national graph database standard formulation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-horizontal">
+          <div class="card-logo-box">
+            <img src="ant_logo_cn.png" data-lang="zh"
+              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><rect width=\'64\' height=\'64\' fill=\'%23f2f2f7\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'24\' font-weight=\'bold\' fill=\'%2386868b\' text-anchor=\'middle\' dy=\'.3em\'>A</text></svg>'"
+              alt="Ant Group" class="company-logo logo-ant" />
+            <img src="ant_logo_en.png" data-lang="en"
+              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><rect width=\'64\' height=\'64\' fill=\'%23f2f2f7\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'24\' font-weight=\'bold\' fill=\'%2386868b\' text-anchor=\'middle\' dy=\'.3em\'>A</text></svg>'"
+              alt="Ant Group" class="company-logo logo-ant" />
+            <div class="card-meta">
+              <span class="company"><span data-lang="zh">蚂蚁集团</span><span data-lang="en">Ant Group</span></span>
+              <span class="time">2019 - 2022</span>
+            </div>
+          </div>
+          <div class="card-content-wrapper">
+            <div class="card-body">
+              <h3>TuGraph / GeaFlow / GeaBase</h3>
+              <p data-lang="zh">负责需求管理与产品规划，参与将图技术沉淀为金融级全图风控能力，服务大规模实时识别场景。</p>
+              <p data-lang="en">Responsible for requirement management and product planning, participating in
+                precipitating graph technology into financial-grade full-graph risk control capabilities for large-scale
+                real-time identification scenarios.</p>
+              <ul class="feature-list" data-lang="zh">
+                <li>全图风控产品化与能力沉淀</li>
+                <li>图技术商业化落地推进</li>
+                <li>图领域标准化工作协同</li>
+              </ul>
+              <ul class="feature-list" data-lang="en">
+                <li>Full-graph risk control productization and capability precipitation</li>
+                <li>Promotion of commercial implementation of graph technology</li>
+                <li>Coordination of standardization work in the graph field</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-horizontal">
+          <div class="card-logo-box">
+            <img src="huawei_logo.png"
+              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><rect width=\'64\' height=\'64\' fill=\'%23f2f2f7\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'24\' font-weight=\'bold\' fill=\'%2386868b\' text-anchor=\'middle\' dy=\'.3em\'>H</text></svg>'"
+              alt="Huawei" class="company-logo logo-huawei" />
+            <div class="card-meta">
+              <span class="company"><span data-lang="zh">华为</span><span data-lang="en">Huawei</span></span>
+              <span class="time">2016 - 2019</span>
+            </div>
+          </div>
+          <div class="card-content-wrapper">
+            <div class="card-body">
+              <h3>Graph Engine Service / GES</h3>
+              <p data-lang="zh">负责云图数据库服务全生命周期，统筹需求、研发、交付与运维，支持海内外客户场景落地。</p>
+              <p data-lang="en">Responsible for the full lifecycle of cloud graph database services, coordinating
+                requirements, R&D, delivery, and operations to support customer scenario implementation worldwide.</p>
+              <ul class="feature-list" data-lang="zh">
+                <li>云服务规划、设计与经营</li>
+                <li>金融、社交、政务客户转型支撑</li>
+                <li>跨部门协同打造图计算竞争力</li>
+              </ul>
+              <ul class="feature-list" data-lang="en">
+                <li>Cloud service planning, design, and operations</li>
+                <li>Support for transformation of finance, social, and government customers</li>
+                <li>Cross-department collaboration to build graph computing competitiveness</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="section">
+      <div class="section-header">
+        <span class="section-subtitle"><span data-lang="zh">长期关注点 Practice Focus</span><span data-lang="en">Practice
+            Focus</span></span>
+        <h2 data-lang="zh">围绕<strong class="highlight">技术可行性</strong>与<strong class="highlight">业务确定性</strong>的核心能力
+        </h2>
+        <h2 data-lang="en">Core capabilities around <strong class="highlight">technical feasibility</strong> and <strong
+          class="highlight">business certainty</strong></h2>
+        <p data-lang="zh">在千万级及以上规模图架构中，逐步沉淀出的落单经验与判断基准。</p>
+        <p data-lang="en">Gradually precipitated implementation experience and judgment benchmarks in graph
+          architectures of ten-million scale and above.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">金融级图风控</span><span data-lang="en">Financial Graph Risk Control</span></h3>
+          <p data-lang="zh">参与多个金融客户的图风控相关建设，将图技术能力沉淀为金融级风险识别体系，支撑海量节点实时分析。</p>
+          <p data-lang="en">Participated in graph risk control construction for multiple financial clients, building a
+            financial-grade risk identification system supporting real-time analysis of massive nodes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">万亿级方案设计</span><span data-lang="en">Trillion-Level Solution Design</span></h3>
+          <p data-lang="zh">面向银行、互联网、Web3、公安、电信、能源客户，参与图数据库方案与性能治理，解决真实生产环境中的落地瓶颈。</p>
+          <p data-lang="en">Providing graph database solutions and performance governance for banking, internet, Web3,
+            and telecom clients to resolve landing bottlenecks in real production environments.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">国家级标准参与</span><span data-lang="en">National Standards Participation</span></h3>
+          <p data-lang="zh">代表企业参与图数据库标准与白皮书制定，参与推动行业技术共识与实践交流。</p>
+          <p data-lang="en">Participated as an enterprise representative in formulating national graph database
+            standards and white papers, promoting industry technical consensus and exchange.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3><span data-lang="zh">从底层技术到产品落地</span><span data-lang="en">From Tech to Product Delivery</span></h3>
+          <p data-lang="zh">在产品定义、系统架构、客户价值与商业化节奏之间持续寻找更合适的平衡方式。</p>
+          <p data-lang="en">Continuously seeking an appropriate balance between product definition, system architecture,
+            customer value, and commercialization rhythm.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="section section-gray">
+      <div class="section-header">
+        <span class="section-subtitle"><span data-lang="zh">经历 Career Timeline</span><span data-lang="en">Career
+            Timeline</span></span>
+        <h2 data-lang="zh">从技术研发，到云服务产品，再到图数据库方向的持续积累</h2>
+        <h2 data-lang="en">Continuous accumulation from technology R&D to cloud services and graph databases</h2>
+      </div>
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <div class="time"><span data-lang="zh">2022 - 至今</span><span data-lang="en">2022 - Present</span></div>
+          <div class="content">
+            <h3><span data-lang="zh">产品总监</span><span data-lang="en">Product Director</span></h3>
+            <span class="org"><span data-lang="zh">杭州悦数科技有限公司</span><span data-lang="en">Vesoft.inc</span></span>
+            <p data-lang="zh">负责 NebulaGraph 与商业版悦数图数据库路线图，兼顾开源生态、商业需求与头部客户方案设计。</p>
+            <p data-lang="en">Responsible for the NebulaGraph database roadmap, balancing open-source
+              ecosystems, business needs, and top customer solution design.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2019 - 2022</div>
+          <div class="content">
+            <h3><span data-lang="zh">高级产品专家</span><span data-lang="en">Senior Product Expert</span></h3>
+            <span class="org"><span data-lang="zh">蚂蚁科技集团股份有限公司</span><span data-lang="en">Ant Group</span></span>
+            <p data-lang="zh">负责 TuGraph、GeaFlow、GeaBase 的需求管理与产品规划，参与全图风控场景建设与能力沉淀。</p>
+            <p data-lang="en">Responsible for requirement management and product planning of TuGraph, GeaFlow, and
+              GeaBase, participating in full-graph risk control scenario construction.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2016 - 2019</div>
+          <div class="content">
+            <h3><span data-lang="zh">云产品经理</span><span data-lang="en">Cloud Product Manager</span></h3>
+            <span class="org"><span data-lang="zh">华为技术有限公司</span><span data-lang="en">Huawei</span></span>
+            <p data-lang="zh">负责华为云 GES 全生命周期管理，推动图数据库云服务在多个行业场景中的落地应用。</p>
+            <p data-lang="en">Responsible for the full lifecycle management of Huawei Cloud GES, promoting the
+              implementation of graph database cloud services in multiple industry scenarios.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2012 - 2016</div>
+          <div class="content">
+            <h3><span data-lang="zh">解决方案负责人</span><span data-lang="en">Solutions Lead</span></h3>
+            <span class="org"><span data-lang="zh">华为技术有限公司</span><span data-lang="en">Huawei</span></span>
+            <p data-lang="zh">带领 30 余人团队推进数据中心与关键 POC 项目，参与完成复杂系统的分布式改造工作。</p>
+            <p data-lang="en">Led a team of over 30 to advance data centers and key POC projects, participating in
+              distributed transformation of complex systems.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2006 - 2012</div>
+          <div class="content">
+            <h3><span data-lang="zh">软件开发主管 / C/C++ 工程师</span><span data-lang="en">Software Dev Manager / C/C++
+                Engineer</span></h3>
+            <span class="org"><span data-lang="zh">华为技术有限公司</span><span data-lang="en">Huawei</span></span>
+            <p data-lang="zh">长期负责移动交换核心网关键模块，积累了高可用、高并发和电信级系统开发经验。</p>
+            <p data-lang="en">Long-term responsibility for key modules of mobile switching core networks, accumulating
+              high-availability and telecom-grade system development experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="contact-box">
+        <div class="contact-text">
+          <span class="section-subtitle"><span data-lang="zh">建立联系 Let's Connect</span><span data-lang="en">Let's
+              Connect</span></span>
+          <h2 data-lang="zh">如果你也关注<strong class="highlight">图数据库产品</strong>、<strong
+              class="highlight">架构实践</strong>或<strong class="highlight">行业合作</strong>，欢迎交流</h2>
+          <h2 data-lang="en">If you also follow <strong class="highlight">graph database products</strong>, <strong
+              class="highlight">architecture practice</strong>, or <strong class="highlight">industry
+              cooperation</strong>, feel free to connect</h2>
+          <p style="margin-top: 16px;" data-lang="zh">杭州 · 图数据库 · 金融风控 · 产品规划 · 架构实践</p>
+          <p style="margin-top: 16px;" data-lang="en">Hangzhou · Graph Databases · Financial Risk Control · Product
+            Planning · Architecture Practice</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:mr.fangyang@gmail.com" class="btn btn-primary btn-large"><span data-lang="zh">发送邮件
+              mr.fangyang@gmail.com</span><span data-lang="en">Email mr.fangyang@gmail.com</span></a>
+          <a href="tel:18072900518" class="btn btn-outline btn-large"><span data-lang="zh">电话 18072900518</span><span
+              data-lang="en">Phone 18072900518</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 <span data-lang="zh">方扬</span><span data-lang="en">Fang Yang</span>. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
